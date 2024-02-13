@@ -19,3 +19,14 @@ body{
 #cont{
     width: 80vw;
 }
+#search{
+    position: absolute;
+    top: 2vw;
+    left: 40%;
+}
+#search_element{
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    list-style: none;
+}
