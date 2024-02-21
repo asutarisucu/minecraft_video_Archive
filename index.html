@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="deco.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </head>
 <body>
     <ul id="rayout">
         <li id="nav">
-            <form>
-                <input type="submit" value="検索" id="search">
-                <ul id="search_element">
-                    <li>type</li>   
-                    <li><input type="radio">farm</li>
-                </ul>
-            </form>
-        </li>
-        <li id="cont">
+            <!--これより検索ボックス-->
+            <ul id="seach_list">
+                <form>
+                    <li id="seach_buttom"><input type="submit" value="検索" id="search"></li>
 
+                        <li><div id="type">type<br>
+                            <select id="select_type">
+                                <option value="defult">select type</option>
+                                <option value="farm">farm</option>
+                                <option value="mod">mod</option>
+                            </select>
+                        </div></li>
+
+                        <!--farm選択時のエリア-->
+                        <div id="farm">
+                            <li><div id="farm_item">item<br>
+                                <select id="select_farm_item">
+                                </select>
+                            </div></li>
+                        </div>
+
+                        <!--mod選択時のエリア-->
+                        <div id="mod">
+                            <li><div id="mod_lorder">lorder<br>
+                                <select id="select_mod_lorder">
+                                    <option value="">select lorder</option>
+                                    <option value="forge">Forge</option>
+                                    <option value="fabric">Fabric</option>
+                                </select>
+                            </div></li>
+                        </div>
+
+                </form>
+            </ul>
+            <!--ここまで検索ボックス-->
+        </li>
+
+        <li id="cont">
         </li>
     </ul>
 </body>

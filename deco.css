@@ -5,6 +5,10 @@ body{
     display: flex;
     list-style: none;
 }
+#seach_list{
+    padding: 5%;
+    list-style: none;
+}
 #nav{
     position: absolute;
     top: 0;
@@ -14,19 +18,11 @@ body{
     background-color: aliceblue;
     border: solid;
     padding: 0;
-    margin: 0;
+    margin: 1%;
 }
 #cont{
     width: 80vw;
 }
-#search{
-    position: absolute;
-    top: 2vw;
-    left: 40%;
-}
-#search_element{
-    position: absolute;
-    top: 5vw;
-    left: 0;
-    list-style: none;
+#seach_buttom{
+    text-align: center;
 }
