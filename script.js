@@ -1,5 +1,4 @@
 //最初に読み込みで変数全部持ってくる
-import item from './farm_item.js'
 window.onload = function(){
     const selectElement = document.getElementById('select_type');
     const div_farm = document.getElementById("farm");
@@ -8,7 +7,9 @@ window.onload = function(){
     type(selectElement,div_farm,div_mod)
 
     const select_farm_item=document.getElementById("select_farm_item")
-    create_select(select_farm_item)
+    const item=items
+    const item_list = JSON.parse(item)
+    create_select(select_farm_item,item_list)
     console.log('load complete!');
 }
 
@@ -29,12 +30,13 @@ function type(selectElement,div_farm,div_mod) {
 }
 
 //farmの要素をtaglistから生成する
-function create_select(farm_item){
-    const item_list=JSON.parse(item);
-    const list_length=Object.keys(item_list).length
+function create_select(farm_item,item){
+    const list_length=Object.keys(item).length
     for(let i=1;i<=list_length;i++){
         let option = document.createElement("option");
-    option.setAttribute("vulue",item_list.i)
+        option.value=item[i]
+        option.text=item[i]
+        farm_item.appendChild(option);
     }
     
 }
