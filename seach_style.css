@@ -1,0 +1,47 @@
+/* defult */
+#search{
+    position: absolute;
+    top: 1vh;
+    left: 25%;
+    width: 50%;
+}
+#type{
+    transition: 1s;
+    position: absolute;
+    top: 5vh;
+    left: 5%;
+}
+#farm{
+    position: absolute;
+    top: 10vh;
+    left: 5%;
+}
+#mod{
+    position: absolute;
+    top: 10vh;
+    left: 5%;
+}
+/* animation */
+#farm{
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+} 
+#mod{
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+#farm.is-show{
+    opacity: 1;
+    visibility: visible;
+}
+#mod.is-show{ 
+    opacity: 1; 
+    visibility: visible;
+}
+.header{
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+}

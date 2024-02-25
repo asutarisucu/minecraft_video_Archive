@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="deco.css" rel="stylesheet" type="text/css">
+    <link href="seach_style.css" rel="stylesheet" type="text/css">
     <script src="tags.js"></script>
     <script src="script.js"></script>
 </head>
@@ -13,39 +14,40 @@
     <ul id="rayout">
         <li id="nav">
             <!--これより検索ボックス-->
-            <ul id="seach_list">
                 <form>
-                    <li id="seach_buttom"><input type="submit" value="検索" id="search"></li>
+                    <input type="submit" value="検索" id="search">
 
-                        <li><div id="type">type<br>
+                        <div id="type">
+                            <p name="header">type</p>
                             <select id="select_type">
                                 <option value="defult">select type</option>
                                 <option value="farm">farm</option>
                                 <option value="mod">mod</option>
                             </select>
-                        </div></li>
+                        </div>
 
                         <!--farm選択時のエリア-->
                         <div id="farm">
-                            <li><div id="farm_item">item<br>
-                                <select id="select_farm_item">
-                                </select>
-                            </div></li>
+                            <div id="farm_item">
+                                <p name="header">item</p>
+                                <select id="select_farm_item"></select>
+                                <input type="text">
+                            </div>
                         </div>
 
                         <!--mod選択時のエリア-->
                         <div id="mod">
-                            <li><div id="mod_lorder">lorder<br>
+                            <div id="mod_lorder">
+                                <p name="header">lorder</p>
                                 <select id="select_mod_lorder">
                                     <option value="">select lorder</option>
                                     <option value="forge">Forge</option>
                                     <option value="fabric">Fabric</option>
                                 </select>
-                            </div></li>
+                            </div>
                         </div>
 
                 </form>
-            </ul>
             <!--ここまで検索ボックス-->
         </li>
 

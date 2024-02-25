@@ -17,17 +17,21 @@ window.onload = function(){
 function type(selectElement,div_farm,div_mod) {
     const search_value=selectElement.value;
     if(search_value==="defult"){
-        div_farm.style.display="none";
-        div_mod.style.display="none";
+        div_farm.classList.remove('is-show');
+        div_mod.classList.remove('is-show');
     }
-    else if(search_value==="farm"){
-        div_farm.style.display="block";
-        div_mod.style.display="none";
+    else 
+    if(search_value==="farm"){
+        hide_show(div_mod,div_farm);
     }else if(search_value==="mod"){
-        div_farm.style.display="none";
-        div_mod.style.display="block";
+        hide_show(div_farm,div_mod);
     }
 }
+async function hide_show(hide,show){
+    await hide.classList.remove('is-show');
+    await show.classList.add('is-show');
+}
+
 
 //farmの要素をtaglistから生成する
 function create_select(farm_item,item){
@@ -38,5 +42,4 @@ function create_select(farm_item,item){
         option.text=item[i]
         farm_item.appendChild(option);
     }
-    
 }

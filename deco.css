@@ -5,10 +5,7 @@ body{
     display: flex;
     list-style: none;
 }
-#seach_list{
-    padding: 5%;
-    list-style: none;
-}
+
 #nav{
     position: absolute;
     top: 0;
@@ -23,6 +20,7 @@ body{
 #cont{
     width: 80vw;
 }
-#seach_buttom{
-    text-align: center;
+p{
+    padding: o;
+    margin: 0;
 }
